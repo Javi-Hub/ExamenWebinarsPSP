@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<VBox fx:id="vbPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="307.0" prefWidth="418.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="39.0" prefWidth="394.0">
+         <children>
+            <Label text="Valor inicial">
+               <HBox.margin>
+                  <Insets left="100.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+            <Label text="Valor final">
+               <HBox.margin>
+                  <Insets left="50.0" top="20.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="394.0">
+         <children>
+            <TextField fx:id="tfValorInicial" prefHeight="25.0" prefWidth="65.0">
+               <HBox.margin>
+                  <Insets left="100.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <TextField fx:id="tfValorFinal" prefHeight="25.0" prefWidth="92.0">
+               <HBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="110.0" prefHeight="65.0" prefWidth="394.0">
+         <children>
+            <Button fx:id="btInicial" mnemonicParsing="false" onAction="#iniciar" prefHeight="25.0" prefWidth="67.0" text="Iniciar">
+               <HBox.margin>
+                  <Insets left="100.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btPausar" mnemonicParsing="false" onAction="#pausar" prefHeight="25.0" prefWidth="95.0" text="Pausar">
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btDetener" mnemonicParsing="false" onAction="#detener" prefHeight="25.0" prefWidth="66.0" text="Detener">
+               <HBox.margin>
+                  <Insets left="10.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ProgressBar fx:id="pbProgreso" prefWidth="200.0" progress="0.0">
+         <VBox.margin>
+            <Insets left="100.0" />
+         </VBox.margin>
+      </ProgressBar>
+      <Label fx:id="lbContador" text="Contador">
+         <VBox.margin>
+            <Insets left="100.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="lbEstado" text="Contador PARADO">
+         <VBox.margin>
+            <Insets left="100.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>
